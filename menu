@@ -10,7 +10,7 @@ echo -e "\033[1;32m O QUE DESEJA FAZER \033[1;33m?\033[1;31m?\033[1;37m : "
 read option
    case $option in
    (1)
-   curl -sO https://raw.githubusercontent.com/Savitar44/youtube-dl/main/option-1 && bash option-1
+   curl -sO https://raw.githubusercontent.com/Savitar44/youtube-dl/main/menu && bash menu
    ;;
    (2)
    clear
@@ -18,6 +18,6 @@ read option
    ;;
    (*) echo -e "\033[1;31mOpção inválida! \033[0m"
    sleep 2s
-   bash option-1
+   bash menu
 
 esac
