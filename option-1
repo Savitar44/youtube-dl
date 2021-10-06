@@ -6,7 +6,6 @@ clear
 echo -e "\033[0;34m━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━\033[0m"
 echo -e "\E[41;1;37m          • BAIXAR VÍDEO • \E[0m"
 echo -e "\033[0;34m━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━\033[0m"
-echo -e
 read -p "$(echo -e $GREEN"Digite o link (url): "$SC)" link
 sleep 2s
 cd /sdcard
@@ -24,6 +23,5 @@ clear
 echo -e "${BLUE}Baixado com Sucesso! ${SC}"
 sleep 2s
 cd
-clear
-exit
+bash menu
 
