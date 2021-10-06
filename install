@@ -4,7 +4,7 @@ SC='\033[0m'
 BLUE='\033[0;34m'
 clear
 echo -e "\033[0;34m━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━\033[0m"
-echo -e "\E[41;1;37m          • INSTALAR SCRIPT• \E[0m"
+echo -e "\E[41;1;37m          • INSTALAR SCRIPT•       \E[0m"
 echo -e "\033[0;34m━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━\033[0m"
 sleep 4s
 clear
@@ -18,5 +18,8 @@ echo -e "${RED}Instalação Finalizada! ${SC}"
 echo -e
 echo -e "${BLUE}Para executar o script novamente digite ${BLUE}bash menu ${SC} ${SC}"
 sleep 4s
+cd /sdcard
+mkdir termux_videos
 rm -rf install
+cd
 curl -sO https://raw.githubusercontent.com/Savitar44/youtube-dl/main/menu && bash menu
