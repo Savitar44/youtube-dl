@@ -10,7 +10,6 @@ echo -e
 read -p "$(echo -e $GREEN"Digite o link (url): "$SC)" link
 sleep 2s
 cd /sdcard
-echo -e
 clear
 echo -e "${GREEN}Procurando Formatos e Resoluções...${SC}"
 sleep 2s
