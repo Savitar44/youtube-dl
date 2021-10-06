@@ -1,0 +1,21 @@
+#!/bin/bash
+RED='\033[1;31m'
+SC='\033[0m'
+BLUE='\033[0;34m'
+clear
+echo -e "\033[0;34m━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━\033[0m"
+echo -e "\E[41;1;37m          • INSTALAR SCRIPT• \E[0m"
+echo -e "\033[0;34m━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━\033[0m"
+sleep 4s
+clear
+echo -e "${RED}Instalando Youtube-dl...${SC}"
+sleep 2s
+echo -e
+pip install youtube-dl
+sleep 2s
+clear
+echo -e "${RED}Instalação Finalizada! ${SC}"
+echo -e
+echo -e "${BLUE}Para executar o script novamente digite (bash menu) ${SC}"
+sleep 4s
+curl -sO https://raw.githubusercontent.com/Savitar44/youtube-dl/main/menu && bash menu
