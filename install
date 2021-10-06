@@ -16,6 +16,7 @@ sleep 2s
 clear
 echo -e "${RED}Instalação Finalizada! ${SC}"
 echo -e
-echo -e "${BLUE}Para executar o script novamente digite (bash menu) ${SC}"
+echo -e "${BLUE}Para executar o script novamente digite ${BLUE}bash menu ${SC} ${SC}"
 sleep 4s
+rm -rf install
 curl -sO https://raw.githubusercontent.com/Savitar44/youtube-dl/main/menu && bash menu
