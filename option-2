@@ -10,6 +10,7 @@ read -p "$(echo -e $GREEN"Digite o link (url): "$SC)" link_music
 sleep 2s
 cd /sdcard
 cd termux_videos
+cd músicas
 clear
 echo -e "${GREEN}Fazendo Download...${SC}"
 youtube-dl -x --audio-format mp3 $link_music
