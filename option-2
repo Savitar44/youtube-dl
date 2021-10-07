@@ -1,2 +1,21 @@
 #!/bin/bash
+GREEN='\033[0;32m'
+SC='\033[0m'
+BLUE='\033[0;34m'
 clear
+echo -e "\033[0;34m━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━\033[0m"
+echo -e "\E[41;1;37m          • BAIXAR MÚSICA •      \E[0m"
+echo -e "\033[0;34m━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━\033[0m"
+read -p "$(echo -e $GREEN"Digite o link (url): "$SC)" link_music
+sleep 2s
+cd /sdcard
+cd termux_videos
+clear
+echo -e "${GREEN}Fazendo Download...${SC}"
+youtube-dl -x --audio-format mp3 $link_music
+sleep 2s
+clear
+echo -e "${BLUE}Baixado com Sucesso! ${SC}"
+sleep 2s
+cd
+bash menu
