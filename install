@@ -17,7 +17,7 @@ clear
 echo -e "${RED}Instalando FFMpeg...${SC}"
 sleep 2s
 echo -e
-pip install ffmpeg
+pkg install ffmpeg
 sleep 2s
 clear
 echo -e "${RED}Instalação Finalizada! ${SC}"
