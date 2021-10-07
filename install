@@ -14,6 +14,12 @@ echo -e
 pip install youtube-dl
 sleep 2s
 clear
+echo -e "${RED}Instalando FFMpeg...${SC}"
+sleep 2s
+echo -e
+pip install ffmpeg
+sleep 2s
+clear
 echo -e "${RED}Instalação Finalizada! ${SC}"
 echo -e
 echo -e "${BLUE}Para executar o script novamente digite ${BLUE}bash menu ${SC} ${SC}"
