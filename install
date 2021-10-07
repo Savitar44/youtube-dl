@@ -8,6 +8,12 @@ echo -e "\E[41;1;37m          • INSTALAR SCRIPT•       \E[0m"
 echo -e "\033[0;34m━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━\033[0m"
 sleep 4s
 clear
+echo -e "${RED}Instalando Python...${SC}"
+sleep 2s
+echo -e
+pkg install python
+sleep 2s
+clear
 echo -e "${RED}Instalando Youtube-dl...${SC}"
 sleep 2s
 echo -e
