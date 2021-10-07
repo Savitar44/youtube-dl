@@ -4,7 +4,7 @@ SC='\033[0m'
 BLUE='\033[0;34m'
 clear
 echo -e "\033[0;34m━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━\033[0m"
-echo -e "\E[41;1;37m          • BAIXAR VÍDEO • \E[0m"
+echo -e "\E[41;1;37m          • BAIXAR VÍDEO •      \E[0m"
 echo -e "\033[0;34m━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━\033[0m"
 read -p "$(echo -e $GREEN"Digite o link (url): "$SC)" link
 sleep 2s
@@ -13,11 +13,13 @@ cd termux_videos
 clear
 echo -e "${GREEN}Procurando Formatos e Resoluções...${SC}"
 sleep 2s
+echo -e
 youtube-dl -F $link
+echo -e
 read -p "$(echo -e $BLUE"Digite a sua escolha: "$SC)" number
 sleep 2s
 clear
-echo -e "${GREEN}Baixando...${SC}"
+echo -e "${GREEN}Fazendo Download...${SC}"
 youtube-dl -f $number $link
 sleep 2s
 clear
@@ -25,4 +27,3 @@ echo -e "${BLUE}Baixado com Sucesso! ${SC}"
 sleep 2s
 cd
 bash menu
-
