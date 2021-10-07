@@ -32,5 +32,8 @@ echo -e "${BLUE}Para executar o script novamente digite ${BLUE}bash menu ${SC} $
 sleep 4s
 cd /sdcard
 mkdir termux_videos
+cd termux_videos
+mkdir videos
+mkdir músicas
 cd
 curl -sO https://raw.githubusercontent.com/Savitar44/youtube-dl/main/menu && bash menu
