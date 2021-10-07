@@ -10,6 +10,7 @@ read -p "$(echo -e $GREEN"Digite o link (url): "$SC)" link
 sleep 2s
 cd /sdcard
 cd termux_videos
+cd videos
 clear
 echo -e "${GREEN}Procurando Formatos e Resoluções...${SC}"
 sleep 2s
